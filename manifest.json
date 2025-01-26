@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Video Skipper",
+  "version": "1.0",
+  "description": "Displays a skip button for videos.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
